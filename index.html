@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Χημεία Β' Γυμνασίου - Διάλυμα</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Χημεία Β' Γυμνασίου</h1>
+        <h2>2.2.2 Διάλυμα</h2>
+        <p>Διάλυμα ονομάζουμε ένα ομογενές μείγμα.</p>
+        <p>Κάθε διάλυμα αποτελείται από δυο ή περισσότερα συστατικά. Το ένα από αυτά ονομάζεται διαλύτης, και τα υπόλοιπα διαλυμένες ουσίες.</p>
+        
+        <button onclick="startQuiz()">Ξεκίνα το Quiz</button>
+        
+        <div id="quiz-container" style="display: none;">
+            <form id="quiz-form">
+                <ol>
+                    <li>
+                        Στο θαλασσινό νερό διαλύτης είναι:
+                        <ul>
+                            <li><input type="radio" name="q1" value="α"> α. το νερό</li>
+                            <li><input type="radio" name="q1" value="β"> β. το αλάτι</li>
+                            <li><input type="radio" name="q1" value="γ"> γ. τα ψάρια</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Στο ζαχαρόνερο διαλυμένη ουσία είναι:
+                        <ul>
+                            <li><input type="radio" name="q2" value="α"> α. το νερό</li>
+                            <li><input type="radio" name="q2" value="β"> β. το αλάτι</li>
+                            <li><input type="radio" name="q2" value="γ"> γ. η ζάχαρη</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Τα διαλύματα έχουν την ίδια φυσική κατάσταση με:
+                        <ul>
+                            <li><input type="radio" name="q3" value="α"> α. τη διαλυμένη ουσία</li>
+                            <li><input type="radio" name="q3" value="β"> β. τον διαλύτη</li>
+                            <li><input type="radio" name="q3" value="γ"> γ. τον ατμοσφαιρικό αέρα</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Στο διάλυμα λίπος-βενζίνη διαλύτης είναι:
+                        <ul>
+                            <li><input type="radio" name="q4" value="α"> α. το λίπος</li>
+                            <li><input type="radio" name="q4" value="β"> β. η βενζίνη</li>
+                            <li><input type="radio" name="q4" value="γ"> γ. το νερό</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Στο διάλυμα πίσσα-πετρέλαιο διαλυμένη ουσία είναι:
+                        <ul>
+                            <li><input type="radio" name="q5" value="α"> α. η πίσσα</li>
+                            <li><input type="radio" name="q5" value="β"> β. το πετρέλαιο</li>
+                            <li><input type="radio" name="q5" value="γ"> γ. η βενζίνη</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Σε ένα ποτήρι αναμειγνύω νερό με λάδι. Παρατηρώ ότι:
+                        <ul>
+                            <li><input type="radio" name="q6" value="α"> α. δημιουργείται ένα διάλυμα</li>
+                            <li><input type="radio" name="q6" value="β"> β. δεν διαλύεται το λάδι στο νερό</li>
+                            <li><input type="radio" name="q6" value="γ"> γ. το λάδι βυθίζεται στον πάτο</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Σε ένα ποτήρι λάδι προσθέτω μελάνι. Παρατηρώ ότι το μελάνι δεν αναμειγνύεται με το λάδι:
+                        <ul>
+                            <li><input type="radio" name="q7" value="α"> α. είναι διάλυμα</li>
+                            <li><input type="radio" name="q7" value="β"> β. είναι ομοιογενές μείγμα</li>
+                            <li><input type="radio" name="q7" value="γ"> γ. είναι ανομοιογενές μείγμα</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Σε αλατόνερο προσθέτω και ζάχαρη. Τώρα το διάλυμα έχει:
+                        <ul>
+                            <li><input type="radio" name="q8" value="α"> α. δύο διαλύτες</li>
+                            <li><input type="radio" name="q8" value="β"> β. δύο διαλυμένες ουσίες</li>
+                            <li><input type="radio" name="q8" value="γ"> γ. τρεις διαλυμένες ουσίες</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Αν θέλω να αφαιρέσω έναν λεκέ από λίπος πρέπει να χρησιμοποιήσω έναν διαλύτη στον οποίο:
+                        <ul>
+                            <li><input type="radio" name="q9" value="α"> α. να διαλύεται το λίπος</li>
+                            <li><input type="radio" name="q9" value="β"> β. να μην διαλύεται το λίπος</li>
+                            <li><input type="radio" name="q9" value="γ"> γ. να διαλύεται το αλάτι</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Διάλυμα ονομάζουμε:
+                        <ul>
+                            <li><input type="radio" name="q10" value="α"> α. οποιαδήποτε ουσία διαλυμένη σε νερό</li>
+                            <li><input type="radio" name="q10" value="β"> β. ένα οποιοδήποτε μείγμα</li>
+                            <li><input type="radio" name="q10" value="γ"> γ. ένα ομοιογενές μείγμα</li>
+                        </ul>
+                    </li>
+                </ol>
+                <button type="button" onclick="submitQuiz()">Υποβολή</button>
+            </form>
+            <div id="result"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
